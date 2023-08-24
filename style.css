@@ -1,0 +1,72 @@
+/* body {
+    margin: 0;
+    height: 100%;
+} */
+
+.container {
+    /* min-width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto; */
+    position: relative;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+} */
+
+.box {
+    background-color: red;
+    width: 350px;
+    height: 350px;
+    transition: 0.5s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* ширина и высота 2 блока */
+    width: 350px;
+    height: 350px;
+    /* Значения определяются в зависимости от его размера */
+    /* margin-left = - width / 2 */
+    margin-left: -175px;
+    /* margin-top = - height / 2 */
+    margin-top: -175px;
+}
+
+.box:hover {
+    transform: rotate(360deg);
+    background-color: lime;
+    /* transform: scale(1.2); */
+}
+
+@media (max-width: 680px) {
+    .box {
+        background-color: blue;
+        width: 350px;
+        height: 350px;
+        transition: 0.5s;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        /* ширина и высота 2 блока */
+        width: 200px;
+        height: 200px;
+        /* Значения определяются в зависимости от его размера */
+        /* margin-left = - width / 2 */
+        margin-left: -100px;
+        /* margin-top = - height / 2 */
+        margin-top: -100px;
+    }
+
+    .box:hover {
+        /* transform: rotate(360deg); */
+        /* transform: scale(1.2); */
+        transform: rotate(360deg);
+        background-color: lime;
+    }
+}
